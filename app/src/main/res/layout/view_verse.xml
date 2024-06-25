@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvItemView"
+    android:elevation="2.6dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/chapter_selection"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/chapter_selection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="6.5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.9">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:id="@+id/favourite"
+                        android:tint="@color/orange"
+                        android:src="@drawable/baseline_edit_note_24"
+                        android:visibility="visible"
+                        android:hapticFeedbackEnabled="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvVerseNumber"
+                        android:layout_marginStart="3dp"
+                        android:text="Verse 1"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:id="@+id/next"
+                        android:tint="@color/orange"
+                        android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+                        android:visibility="visible"
+                        android:hapticFeedbackEnabled="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVerseDetails"
+                android:text="lavgigngeignirngirengirngirnggeirgniregningignrinignrignignignrignigngirgnignrignrinigndinirtniniyniydnisthirinininmiynmnmsinisnbisrnitnbiaenbiatenaitnbbindigyintmnimginmyinmyimiymnim"
+                android:ellipsize="end"
+
+                android:maxLines="4"
+                android:layout_marginTop="6.5dp"
+                android:textSize="15.6dp"/>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backgroundImage2"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="5dp"
+            android:alpha=".4"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/verse_chakra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/backgroundImage1"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="5dp"
+            android:alpha=".6"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/verse_bottom_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/backgroundImage3"
+            android:layout_width="141dp"
+            android:layout_height="151dp"
+            android:alpha="0.2"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/verse_top_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

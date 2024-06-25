@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".View.Fragments.VerseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lltop"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/llbottom">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clGita">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:id="@+id/llbhagvvatgita"
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="19.5dp"
+                    android:layout_height="19.5dp"
+                    android:src="@drawable/kalash"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCapterNo"
+                    android:layout_marginHorizontal="2.6dp"
+                    android:text="Shree Bhagvat Gita"
+                    android:textColor="@color/orange"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="19.5dp"
+                    android:layout_height="19.5dp"
+                    android:src="@drawable/kalash"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chapter 1"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textSize="22.1sp"
+            android:id="@+id/tvChapterNumber"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Asad visaj Yojana"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22.1sp"
+            android:id="@+id/tvChapterName"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="6.5dp"
+            android:text="ggrrgggggggggggggrugnnnnnnnnnnnnnnnnnnnregurubbbbbbbbbbbbjjjjjjjjjjjjjjjjjjjjjjjjneurnbeurnb"
+            android:maxLines="4"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/tvChapterDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvseemore"
+            android:layout_marginStart="6.5dp"
+            android:text="Read more..."
+            android:textSize="14.3sp"
+            android:textColor="#0051f4"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVerseCount"
+                android:textSize="19.5sp"
+                android:text="47"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="6.5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvverse"
+                android:textSize="19.5sp"
+                android:text="Verses"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="3.9dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvShowingMessage"
+            android:layout_marginHorizontal="2.6dp"
+            android:padding="3.9dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            app:layout_constraintTop_toBottomOf="@id/clGita"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:text="No internet connection \n Check for Saved chapters"
+            android:textSize="18.2sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llbottom"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lltop">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shimmer"
+            android:padding="6.5dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/shimmer_verse"/>
+                <include layout="@layout/shimmer_verse"/>
+                <include layout="@layout/shimmer_verse"/>
+                <include layout="@layout/shimmer_verse"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvVerse"
+            android:padding="6.5dp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/view_chapters"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:src="@drawable/krsna"
+        android:alpha=".15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/llbottom"
+        android:background="@android:color/transparent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvItemView"
+    android:elevation="2.6dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/chapter_selection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="6.5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.9">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvChapterNumber"
+                        android:text="Chapter 1"
+                        android:textStyle="bold"
+                        android:textSize="15.6sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvChapterName"
+                        android:text="Arjuna Visada Yoga"
+                        android:textStyle="bold"
+                        android:textSize="22sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:id="@+id/favouritefilled"
+                        android:layout_height="39dp"
+                        android:src="@drawable/baseline_favorite_24"
+                        android:visibility="gone"
+                        android:hapticFeedbackEnabled="true"/>
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:id="@+id/favourite"
+                        android:src="@drawable/baseline_favorite_border_24"
+                        android:visibility="visible"
+                        android:hapticFeedbackEnabled="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChpdescp"
+                android:text="lavgigngeignirngirengirngirnggeirgniregningignrinignrignignignrignigngirgnignrignrinigndinirtniniyniydnisthirinininmiynmnmsinisnbisrnitnbiaenbiatenaitnbbindigyintmnimginmyinmyimiymnim"
+                android:ellipsize="end"
+
+                android:maxLines="4"
+                android:layout_marginTop="6.5dp"
+                android:textSize="15.6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9.1dp">
+
+                <ImageView
+                    android:layout_width="36.4dp"
+                    android:layout_height="36.4dp"
+                    android:id="@+id/showVerse"
+                    android:src="@drawable/baseline_menu_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvVerseCount"
+                    android:textSize="15.6sp"
+                    android:text="47"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="13dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvverse"
+                    android:textSize="15.6sp"
+                    android:text="Verses"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3.9dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backgroundImage"
+            android:src="@drawable/up_left"
+            android:scaleType="centerInside"
+            android:alpha="0.2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/backgroundImage2"
+            android:layout_width="173dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:alpha=".2"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/down_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/backgroundImage3"
+            android:layout_width="141dp"
+            android:layout_height="151dp"
+            android:alpha="0.2"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/up_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
